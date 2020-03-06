@@ -1,0 +1,39 @@
+@import '@/assets/scss/variables.scss';
+.ui-page {
+  padding: 16px;
+  color: #4f4f4f;
+  h2 {
+    color: #222;
+  }
+  em {
+    color: $red;
+    font-weight: 500;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 12px 0;
+  }
+  .image {
+    max-width: 800px;
+    width: 100%;
+  }
+  .color-table {
+    width: 600px;
+    .deep {
+      background-color: #000;
+      color: #fff;
+    }
+    .cell {
+      display: flex;
+      align-items: center;
+      .show-item {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 6px;
+        border: 1px solid #222;
+      }
+    }
+  }
+}

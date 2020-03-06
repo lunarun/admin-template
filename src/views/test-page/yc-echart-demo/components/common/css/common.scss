@@ -1,0 +1,15 @@
+.pre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.chart {
+  width: 70%;
+}
+.code {
+  flex-grow: 1;
+  height: 70%;
+}

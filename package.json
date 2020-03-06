@@ -1,0 +1,132 @@
+{
+  "name": "iyourcar_admin_template",
+  "version": "0.0.7",
+  "description": "有车以后管理后台脚手架",
+  "author": "Iyourcar",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "build:production": "cross-env NODE_ENV=production node build/build.js",
+    "build:testing": "cross-env NODE_ENV=testing node build/build.js",
+    "build:release": "cross-env NODE_ENV=release node build/build.js",
+    "build:report": "cross-env npm_config_report=true NODE_ENV=production node build/build.js",
+    "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
+    "format": "prettier --write src/**/*.{js,scss,json,md,vue}",
+    "upload": "gulp upload",
+    "commit": "git cz"
+  },
+  "dependencies": {
+    "@iyourcar-admin/acl": "0.0.1",
+    "@iyourcar-admin/common-compoentns": "^1.0.0",
+    "@iyourcar-admin/yc-echart": "^1.0.0",
+    "axios": "^0.18.0",
+    "cropperjs": "^1.5.5",
+    "echarts": "^4.4.0",
+    "element-ui": "^2.12.0",
+    "file-saver": "^2.0.2",
+    "font-awesome": "^4.7.0",
+    "iyourcar-getstoken": "^1.1.7",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.15",
+    "md5": "^2.2.1",
+    "mockjs": "^1.0.1-beta3",
+    "nprogress": "0.2.0",
+    "prismjs": "^1.17.1",
+    "qiniu-js": "^2.5.4",
+    "qs": "^6.9.0",
+    "store": "^2.0.12",
+    "vue": "^2.5.17",
+    "vue-cropper": "^0.4.9",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "xlsx": "^0.15.1"
+  },
+  "devDependencies": {
+    "@iyourcar-admin/dom-component": "^1.0.7",
+    "@iyourcar/apollo": "0.0.3",
+    "autoprefixer": "8.5.0",
+    "babel-core": "6.26.0",
+    "babel-helper-vue-jsx-merge-props": "2.0.3",
+    "babel-loader": "7.1.5",
+    "babel-plugin-syntax-jsx": "6.18.0",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-plugin-transform-vue-jsx": "3.7.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-register": "^6.26.0",
+    "chalk": "2.4.1",
+    "compression-webpack-plugin": "2.0.0",
+    "copy-webpack-plugin": "4.5.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "1.0.0",
+    "cz-conventional-changelog": "^3.1.0",
+    "eventsource-polyfill": "0.9.6",
+    "file-loader": "1.1.11",
+    "friendly-errors-webpack-plugin": "1.7.0",
+    "gulp": "^3.9.1",
+    "html-webpack-plugin": "4.0.0-alpha",
+    "husky": "^3.0.5",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^9.2.5",
+    "mini-css-extract-plugin": "0.4.1",
+    "moment": "^2.24.0",
+    "node-notifier": "5.2.1",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "5.0.0",
+    "ora": "3.0.0",
+    "path-to-regexp": "2.4.0",
+    "portfinder": "1.0.16",
+    "postcss-import": "12.0.0",
+    "postcss-loader": "2.1.6",
+    "postcss-url": "7.3.2",
+    "qiniu": "^6.1.13",
+    "request": "^2.88.2",
+    "rimraf": "2.6.2",
+    "sass-loader": "7.0.3",
+    "sass-resources-loader": "^1.3.4",
+    "script-ext-html-webpack-plugin": "2.0.1",
+    "script-loader": "^0.7.2",
+    "semver": "5.5.0",
+    "shelljs": "0.8.2",
+    "svg-sprite-loader": "3.8.0",
+    "svgo": "1.0.5",
+    "uglifyjs-webpack-plugin": "1.2.7",
+    "url-loader": "1.0.1",
+    "vue-loader": "15.3.0",
+    "vue-style-loader": "4.1.2",
+    "vue-template-compiler": "2.5.17",
+    "walk": "^2.3.14",
+    "webpack": "4.16.5",
+    "webpack-bundle-analyzer": "2.13.1",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "3.1.14",
+    "webpack-merge": "4.1.4"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,scss,json,md,vue}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

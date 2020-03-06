@@ -1,0 +1,128 @@
+// 字体大小与行高设置
+@mixin fontSize($size) {
+  font-size: $size + px;
+  line-height: $size + 8 + px;
+}
+// padding类
+.pl8 {
+  padding-left: 8px;
+}
+.pr8 {
+  padding-right: 8px;
+}
+.pt8 {
+  padding-top: 8px;
+}
+.pb8 {
+  padding-bottom: 8px;
+}
+.pl16 {
+  padding-left: 16px;
+}
+.pr16 {
+  padding-right: 16px;
+}
+.pt16 {
+  padding-top: 16px;
+}
+.pb16 {
+  padding-bottom: 16px;
+}
+.pl24 {
+  padding-left: 24px;
+}
+.pr24 {
+  padding-right: 24px;
+}
+.pt24 {
+  padding-top: 24px;
+}
+.pb24 {
+  padding-bottom: 24px;
+}
+.pl32 {
+  padding-left: 32px;
+}
+.pr32 {
+  padding-right: 32px;
+}
+.pt32 {
+  padding-top: 32px;
+}
+.pb32 {
+  padding-bottom: 32px;
+}
+.pl40 {
+  padding-left: 40px;
+}
+.pr40 {
+  padding-right: 40px;
+}
+.pt40 {
+  padding-top: 40px;
+}
+.pb40 {
+  padding-bottom: 40px;
+}
+
+// margin类
+.ml8 {
+  margin-left: 8px;
+}
+.mr8 {
+  margin-right: 8px;
+}
+.mt8 {
+  margin-top: 8px;
+}
+.mb8 {
+  margin-bottom: 8px;
+}
+.ml16 {
+  margin-left: 16px;
+}
+.mr16 {
+  margin-right: 16px;
+}
+.mt16 {
+  margin-top: 16px;
+}
+.mb16 {
+  margin-bottom: 16px;
+}
+.ml24 {
+  margin-left: 24px;
+}
+.mr24 {
+  margin-right: 24px;
+}
+.mt24 {
+  margin-top: 24px;
+}
+.mb24 {
+  margin-bottom: 24px;
+}
+.ml32 {
+  margin-left: 32px;
+}
+.mr32 {
+  margin-right: 32px;
+}
+.mt32 {
+  margin-top: 32px;
+}
+.mb32 {
+  margin-bottom: 32px;
+}
+.ml40 {
+  margin-left: 40px;
+}
+.mr40 {
+  margin-right: 40px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
